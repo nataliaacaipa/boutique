@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<!--comentarios color: #C2847A;-->
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Boutique</title>
+
+    <link rel="stylesheet" href="boutique.css">
+    <link rel="icon" type="image/png" href="images/logo-black.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="boutique.js"></script>
+    <script src="https://kit.fontawesome.com/deb6d3d023.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header oculto1 showScroll" id="header" >
+
+        <nav class="nav">
+
+            <img src="images/logo_blanco_small.png" class="logo" alt="">
+
+            <button class="barras">
+                <i class="fas fa-bars"></i>
+            </button>
+
+
+
+            <ul class="navMenu oculto" id="navMenu">
+
+
+                <li><a class="inicio estiloLink activeLink">Inicio</a></li>
+                <li><a class="quienes_somos estiloLink activeLink">Quiénes somos</a></li>
+                <li><a class="ofertas estiloLink activeLink">Ofertas</a></li>
+                <li><a class="donde_estamos estiloLink activeLink">Dónde estamos</a></li>
+                <li><a class="contacto estiloLink activeLink">Contacto</a></li>
+
+
+
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="fotoInicio">
+            <img class="imagenI" src="images/ropapastel.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+
+        <div class="texto h2Style">
+            <h2>Quiénes somos</h2>
+            <br>
+            <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, consequatur! Nam aliquid
+                qui deserunt saepe obcaecati reiciendis officia, facilis, aut culpa mollitia facere, rerum aperiam
+                ratione molestiae similique provident corporis! Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Obcaecati, cupiditate, debitis voluptatem, harum sunt sit explicabo aliquam ea excepturi nihil
+                repellendus. Vel velit illo reprehenderit blanditiis qui doloribus, ipsa natus quibusdam corporis?
+                Voluptas totam inventore mollitia corrupti? Enim, odit delectus? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Hic alias nostrum veritatis saepe. Dolorum quis beatae voluptatem quia vel rem
+                explicabo assumenda est dolore magnam officia unde quidem ex, sit fugiat, architecto nobis. Fuga commodi
+                minima distinctio quaerat, quis, repudiandae molestias voluptatum a adipisci ab esse ipsum sequi est
+                itaque? </p>
+        </div>
+
+        <div class="personas">
+
+            <div class="persona1">
+                <div class="foto">
+                    <img class="imagenP1" src="images/ceogirl.jpeg" alt="">
+                </div>
+
+
+                <div class="aboutP1">
+                    <p class="txt1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis
+                        consequuntur aperiam adipisci, asperiores id fugiat aspernatur at iusto ex numquam repellendus
+                        quas fugit perspiciatis vel! Totam iste sed modi!</p>
+                </div>
+
+            </div>
+
+
+            <div class="persona2">
+                <div class="foto">
+                    <img class="imagenP2" src="images/ceogirl2.jpeg" alt="">
+                </div>
+
+
+
+                <div class="aboutP2">
+                    <p class="txt2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis
+                        consequuntur aperiam adipisci, asperiores id fugiat aspernatur at iusto ex numquam repellendus
+                        quas fugit perspiciatis vel! Totam iste sed modi!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="sales" class="sales">
+
+        <div id="ofertas" class="h2Style">
+            <h2>Ofertas</h2>
+        </div>
+
+
+        <div class="Slider-Container">
+
+            <div class="myslides">
+
+                <div class="escena">
+                    <div class="ropa">
+                        <div class="prenda">
+                            <img class="p" src="images/sudaderaverde.jpeg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="informacion">
+
+
+                        <div class="nombrePrenda fondoRosa">
+                            <h3>Sudadera verde</h3>
+                        </div>
+
+                        <div class="precioActual1 ahora">
+                            <p>19.90€</p>
+                        </div>
+
+                        <div class="precioTachado1 antes ">
+                            <span class="tachado" id="tachado">29.90€</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="myslides">
+
+                <div class="escena">
+
+                    <div class="ropa">
+                        <div class="prenda">
+                            <img class="p" src="images/camisetarosa.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="informacion">
+
+                        <div class="nombrePrenda fondoRosa">
+                            <h3>Camiseta rosa</h3>
+                        </div>
+
+                        <div class="precioActual2 ahora  ">
+                            <p>9.90€</p>
+                        </div>
+
+                        <div class="precioTachado2  antes">
+                            <span class="tachado">19.90€</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <a id="left" class="prev full tiny" onclick="plusSlides (-1)">&#10094;</a>
+            <a id="right" class="next full tiny" onclick="plusSlides (1)">&#10095;</a>
+        </div>
+    </section>
+
+
+    <section id="location" class="location">
+
+        <div id="lugar" class="h2Style">
+            <h2>Dónde estamos</h2>
+        </div>
+
+        <div class="infoLugar" >
+            <div class="map">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48602.31752000933!2d-3.7330488017883257!3d40.41671795010555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x230a1b3f69e74cc8!2sLa%20Gatoteca!5e0!3m2!1ses!2ses!4v1637573514831!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+
+            <div>
+                <div class="direccion" >
+                    <h3 class="txtDir" >C. del Duque de Rivas, 4, 28012 Madrid</h3>
+                </div>  
+                
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    <section class="contact" id="contacto">
+
+        <div class="contact1" >
+            <div class="tituloCont" id="tituloCont" >
+                <h3>Envíanos un mensaje</h3>
+            </div>
+            <form method="POST" [action="#" ]>
+                <p id="name">Nombre:</p>
+                <input id="inputNombre" type="text" />
+    
+                <p id="mail">Introduce tu correo:</p>
+                <input id="inputCorreo" placeholder="correo@ejemplo.com" type="email" />
+    
+                <p id="comments">Comentarios:</p>
+                <input id="inputComentario" type="text" />
+    
+                <p></p>
+                
+                <input id="inputEnviar" type="submit" value="Enviar" />
+            </form>
+        </div>
+
+        <div class="contact2" >
+            <div class="tituloCont2 " >
+                <h3>Información de contacto</h3>
+            </div>
+
+            <div class="infoCont2" >
+                <div class="mailMiBoutique" >
+                    <p>info-MiBoutique@gmail.com</p> 
+                 </div>
+     
+                 <div class="numMiBoutique" >
+                     <p>606275651</p>
+                 </div>
+            </div>
+
+            
+        </div>
+        
+    </section>
+
+
+   
+
+
+    <footer>
+
+        <div id="ig">
+            <i class="fab fa-instagram"  onclick="window.open('https://www.instagram.com/?hl=es')"></i>
+
+        </div>
+
+        <div id="fb">
+            <i class="fab fa-facebook-f" onclick="window.open('https://es-es.facebook.com/')" ></i>
+
+        </div>
+
+        <div id="tw">
+            <i class="fab fa-twitter" onclick="window.open('https://twitter.com/?lang=es')" ></i>
+
+        </div>
+
+
+        <div class="flecha" id="flecha" >
+            <i class="fas fa-chevron-up"></i>
+
+        </div>
+
+    </footer>
+
+    <div class="cookies" id="divCookies">
+        <h3 class="titleCookies">Política de cookies</h3>
+        <p class="message">Mi Boutique utiliza cookies propias y de terceros para posibilitar y mejorar tu experiencia de navegación, mostrarte publicidad personalizada así como para realizar análisis estadísticos</p> 
+        <button class="boton" onclick="pulsado()">Aceptar y seguir navegando</button>
+    </div>
+
+</body>
+
+</html>

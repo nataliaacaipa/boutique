@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/******fuentes******/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+/***************cookies*****************/
+.cookies {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    width: 300px;
+    position: fixed;
+    bottom: 400px;
+    left: 50px;
+    right: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 20px 10px rgba(10, 10, 10, 0.25);
+    margin: 0 auto;
+}
+
+.titleCookies, .message {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.message {
+    margin-top: 1em;
+}
+
+.titleCookies {
+    color: #7F685A;
+}
+
+.boton {
+    background-color: #7F685A;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 4.5em;
+    margin-top: 1em;
+}
+
+
+header {
+    background-color: #b3a8a5c0;
+    width: 100%;
+    border-bottom: rgb(255, 255, 255) solid 1px;
+    position: fixed;
+    top: 0;
+    z-index: 999999999999;
+}
+
+
+section h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    text-align: center;
+    color: white;
+    padding: 1em 0 0;
+}
+
+
+.logo {
+    width: 300px;
+}
+
+.imagenI {
+    width: 100%;
+}
+
+body {
+    background-image: url(images/ropapastel.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #B3A8A5;
+}
+
+/*menu navegación*/
+.nav {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 60px;
+}
+
+.barras {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    display: none;
+
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+
+}
+
+.nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    width: max-content;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.nav ul li::before {
+    content: "";
+    height: 1.5px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s ease-out;
+}
+
+.nav ul li:hover::before {
+    width: 100%;
+}
+
+.oculto1 {
+    display: none;
+}
+
+
+/**********************quiénes somos***************/
+
+.about, .location {
+    background-color: #B3A8A5;
+
+}
+
+.texto {
+    padding: 3em 6em;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    text-align: justify;
+
+}
+
+.texto h2 {
+    padding: 0;
+}
+
+.txt {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.personas {
+    width: 80%;
+    margin: auto;
+    padding: 2em 0 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+
+}
+
+.persona1, .persona2 {
+    width: 30%;
+    height: 40em;
+}
+
+.persona1 {
+    padding-left: 12em;
+
+}
+
+.persona2 {
+    padding-right: 10em;
+
+}
+
+.foto {
+    width: 312.5px;
+    height: 468.75px;
+}
+
+
+.imagenP1, .imagenP2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+
+
+.aboutP1, .aboutP2 {
+    width: 312.5px;
+    padding: 2em 0;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+
+
+/***********************ofertas*******************/
+
+
+
+.sales {
+    background-color: #7f685abd;
+    border-top: 3px solid white;
+}
+
+
+
+
+.informacion {
+    width: 500px;
+    height: 500px;
+    padding-top: 2em;
+    padding-right: 25em;
+}
+
+
+.nombrePrenda {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: #B3A8A5;
+}
+
+
+
+.precioActual1, .precioTachado1, .precioActual2, .precioTachado2 {
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+
+}
+
+.ahora {
+    font-size: 40px;
+}
+
+
+.antes {
+    font-size: 30px;
+}
+
+
+.tachado {
+    position: relative;
+
+}
+
+.tachado:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: inherit;
+
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+
+}
+
+
+
+.ropa {
+    padding-top: 2em;
+    padding-left: 25em;
+}
+
+.prenda {
+    width: 500px;
+    height: 500px;
+
+}
+
+.p {
+    width: 100%;
+    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+.escena {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 5em;
+}
+
+
+.myslides .escena {
+    width: 100%;
+}
+
+.Slider-Container {
+    position: relative;
+    margin: auto;
+}
+
+.myslides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+    margin-top: -8em;
+    padding: 7em;
+}
+
+
+
+.next {
+    right: 0;
+}
+
+.mislide {
+    text-align: center;
+}
+
+
+
+/*********************dónde estamos*************/
+
+
+.map {
+    margin: 3em 0 5em 5em;
+    top: 0;
+
+}
+
+iframe {
+    width: 50em;
+    height: 30em;
+}
+
+.location {
+    background-color: #B3A8A5;
+    border-top: 3px solid white;
+
+}
+
+.direccion {
+    color: white;
+    padding-right: 15em;
+    padding-left: 2em;
+}
+
+.txtDir {
+    font-size: 30px;
+}
+
+.infoLugar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+
+
+/**************************contacto******************/
+.contact {
+    background-color: #7f685abd;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    border-top: 3px solid white;
+
+}
+
+.tituloCont {
+    padding: 4em 0 2em;
+    margin: 0;
+    color: white;
+
+}
+
+.tituloCont h3 {
+    font-size: 3em;
+}
+
+.contact1 {
+    padding-left: 25em;
+}
+
+.contact2 {
+    margin-right: 20em;
+}
+
+.contact2 p {
+    color: #7F685A;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+.infoCont2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.contact2 h3 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+
+
+form {
+
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+form input {
+    background-color: rgba(255, 255, 255, 0.473);
+    border: 1px solid white;
+    color: #7F685A;
+    outline-color: white;
+
+}
+
+#mail, #comments {
+    padding-top: 1em;
+}
+
+#inputNombre, #inputCorreo {
+    width: 20em;
+    height: 1.5em;
+}
+
+#inputComentario {
+    width: 30em;
+    height: 5em;
+
+}
+
+#inputEnviar {
+    margin-top: 2em;
+    width: 10em;
+    height: 2em;
+    margin-left: 6em;
+    font-size: large;
+    background-color: white;
+    color: #7F685A;
+    border-radius: 3px;
+    margin-bottom: 3em;
+}
+
+
+/********************footer************************/
+
+footer {
+    background-color: #B3A8A5;
+    border-top: 3px solid white;
+    text-align: center;
+    padding: 3em;
+
+}
+
+footer i {
+    font-size: 90px;
+    color: white;
+}
+
+footer div {
+    width: 25%;
+    display: inline-block;
+
+}
+
+.flecha {
+    width: 1.3em;
+    position: fixed;
+    bottom: 1em;
+    right: 4.2em;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {}
+
+/*****************************************/
+
+@media screen and (max-width: 767px) {
+    /************************************************************************************************/
+
+
+    /***menu responsive**/
+
+
+    .logo {
+        width: 200px;
+    }
+
+    .imagenI {
+        background-size: cover;
+    }
+
+    /*menu navegación*/
+
+
+    .oculto a {
+        display: none;
+
+    }
+
+    .oculto .barras {
+        display: block;
+    }
+
+    .barras {
+        display: block;
+    }
+
+    .navMenu {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position: fixed;
+        align-items: center;
+        top: 61px;
+        width: 100%;
+
+        background-color: #ada9a3;
+
+    }
+
+
+    .oculto {
+        left: 200%;
+
+    }
+
+    .nav {
+        height: 60px;
+        padding: 0;
+
+    }
+
+
+    .nav ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 2em;
+
+    }
+
+    .nav ul li .oculto {
+        display: none;
+    }
+
+    .nav ul li a {
+        font-size: 1.5em;
+        color: #7F685A;
+    }
+
+    .estiloLink:hover {
+        transition: 0.5s;
+        color: white;
+
+    }
+
+
+
+    .nav ul li::before {
+        display: none;
+    }
+
+    .nav ul li:hover::before {
+        display: none;
+    }
+
+
+
+    /**********************quiénes somos***************/
+
+
+
+    .sales h2 {
+        padding: 1em 0 0.5em;
+    }
+
+    .personas {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    .persona1, .persona2 {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .persona2 {
+        padding: 5em 0;
+    }
+
+    .foto {
+        width: 312.5 px;
+        height: 468.75 px;
+        margin: 0 auto;
+    }
+
+    .imagenP1, .imagenP2 {
+        width: 100%;
+    }
+
+    .aboutP1, .aboutP2 {
+        width: 312.5 px;
+        padding: 1.5 em 0;
+        color: white;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    /***********************ofertas*******************/
+
+
+    .informacion {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        height: 15em;
+    }
+
+
+    .nombrePrenda {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        padding: 1em;
+        background-color: #8F8880;
+
+    }
+
+    .precioActual1, .precioTachado1, .precioActual2, .precioTachado2 {
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+
+    .ahora {
+        font-size: 40px;
+    }
+
+
+    .antes {
+        font-size: 30px;
+    }
+
+
+    .tachado {
+        position: relative;
+
+    }
+
+    .tachado:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        right: 0;
+        border-top: 2px solid;
+        border-color: inherit;
+
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        -o-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+
+    }
+
+
+
+    .ropa {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .prenda {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .p {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+
+    .Slider-Container {
+        position: relative;
+        margin: auto;
+    }
+
+    .myslides, .escena {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 70%;
+        width: auto;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        transition: 0.6s ease;
+        user-select: none;
+        margin-top: -8em;
+        padding: 1em;
+    }
+
+
+    .next {
+        right: 0;
+    }
+
+
+    .mislide {
+        text-align: center;
+    }
+
+
+    /*********************dónde estamos*************/
+
+
+    .map {
+        margin: 3em 0 5em 2em;
+        top: 0;
+
+    }
+
+    iframe {
+        width: 20em;
+        height: 25fem;
+    }
+
+    .location {
+        background-color: #b3a8a5c0;
+        border-top: 3px solid white;
+
+    }
+
+    .direccion {
+        color: white;
+        padding-right: 0em;
+        padding-left: 3em;
+    }
+
+
+    /**************************contacto******************/
+    .contact2 p {
+        color: #7F685A;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .tituloCont {
+        padding: 4em 0 2em;
+        margin: 0;
+        color: white;
+
+    }
+
+    .tituloCont h3 {
+        font-size: 3em;
+    }
+
+    .contact {
+        background-color: #7f685abd;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        border-top: 3px solid white;
+        flex-direction: column;
+
+    }
+
+    .contact1 {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .contact2 {
+        margin: 0 auto;
+        padding-bottom: 4em;
+    }
+
+    .infoCont2 {
+        background-color: rgb(255, 255, 255);
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact2 h3 {
+        color: white;
+        text-align: center;
+        font-size: 2.5em;
+        padding: 0.5em;
+    }
+
+
+
+    form {
+
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+
+    form input {
+        background-color: rgba(255, 255, 255, 0.473);
+        border: 1px solid white;
+        color: #7F685A;
+        outline-color: white;
+
+    }
+
+    #mail, #comments {
+        padding-top: 1em;
+    }
+
+    #inputNombre, #inputCorreo {
+        width: 20em;
+        height: 1.5em;
+    }
+
+    #inputComentario {
+        width: 30em;
+        height: 5em;
+
+    }
+
+    #inputEnviar {
+        margin-top: 2em;
+        width: 10em;
+        height: 2em;
+        margin-left: 6em;
+        font-size: large;
+        background-color: white;
+        color: #7F685A;
+        border-radius: 3px;
+        margin-bottom: 3em;
+    }
+
+
+    /********************footer************************/
+
+    footer {
+
+        padding: 3em 0;
+
+    }
+
+    footer i {
+        margin: 0 auto;
+    }
+
+
+    footer div {
+        margin: 0 auto;
+
+    }
+
+
+
+
+
+}
